@@ -1,6 +1,8 @@
 ---
 import MainLayout from "@/layouts/MainLayout.astro";
+import {SignIn, SignOut} from "auth-astro/components";
 ---
 <MainLayout title="Home">
 	<h1>Home</h1>
+	<SignIn provider="google">Iniciar con Google</SignIn>
 </MainLayout>
