@@ -1,7 +1,11 @@
 ---
+import BlogPost from "@/layouts/BlogPost.astro";
+import type { GetStaticPaths } from "astro";
+import { type CollectionEntry, getCollection } from 'astro:content';
 import {getAllTags} from "@/utils/getAllTags";
 const tags = await getAllTags();
 import {Icon} from "astro-icon/components";
+
 ---
 
 <div class="flex gap-3">
